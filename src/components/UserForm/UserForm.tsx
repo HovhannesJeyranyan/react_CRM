@@ -10,7 +10,7 @@ const Users = () => {
   if (isLoading) return <div>Loading...</div>
 
   return (
-    <>
+    <div>
       <ul>
         {data?.map((u) => (
           <li key={u.id}>{u.name}</li>
@@ -19,7 +19,7 @@ const Users = () => {
       <button onClick={() => addUser({ name: 'Alex' })}>
         Add
       </button>
-    </>
+    </div>
   )
 }
 

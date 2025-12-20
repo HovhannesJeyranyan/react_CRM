@@ -1,6 +1,10 @@
 // src/store/baseApi.ts
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-
+// Тип интерфейса пользователя
+export interface User {
+  id: number;
+  name: string;
+}
 // RTK Query API
 export const baseApi = createApi({
   reducerPath: 'baseApi', // уникальное имя редьюсера
@@ -51,8 +55,4 @@ export const {
   useDeleteUserMutation,
 } = baseApi;
 
-// Тип интерфейса пользователя
-export interface User {
-  id: number;
-  name: string;
-}
+
