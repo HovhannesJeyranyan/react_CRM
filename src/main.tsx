@@ -4,6 +4,7 @@ import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import App from "./App";
 import Login from "./pages/Login/Login";
+import User from "./pages/User/User";
 import { store } from './app/store'
 import { Provider } from 'react-redux'
 
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: "login",
         element: <Login />
+      },
+      {
+        path: "users",
+        element: <User />
       }
     ]
   },

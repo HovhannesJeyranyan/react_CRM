@@ -18,6 +18,8 @@ function App() {
       <Link to="/">Home</Link>
       <br />
       <Link to="/login">Login</Link>
+      <br />
+      <Link to="/users">Users</Link>
       <Outlet />
 
     </div>

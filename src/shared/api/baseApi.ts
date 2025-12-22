@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 // Тип интерфейса пользователя
 export interface User {
   id: number;
-  name: string;
+  uName: string;
 }
 // RTK Query API
 export const baseApi = createApi({

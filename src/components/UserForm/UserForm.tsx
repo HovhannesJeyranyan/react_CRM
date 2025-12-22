@@ -3,7 +3,7 @@ import {
   useAddUserMutation,
 } from '../../shared/api/baseApi'
 
-const Users = () => {
+const UserForm = () => {
   const { data, isLoading } = useGetUsersQuery()
   const [addUser] = useAddUserMutation()
 
@@ -13,14 +13,14 @@ const Users = () => {
     <div>
       <ul>
         {data?.map((u) => (
-          <li key={u.id}>{u.name}</li>
+          <li key={u.id}>{u.uName}</li>
         ))}
       </ul>
-      <button onClick={() => addUser({ name: 'Alex' })}>
+      <button onClick={() => addUser({ uName: 'Alex' })}>
         Add
       </button>
     </div>
   )
 }
 
-export default Users
+export default UserForm

@@ -2,61 +2,71 @@
   "profiles": [
     {
       "id": "1",
-      "PName": "Jhon",
-      "Pass": "1234",
+      "pName": "Jhon",
+      "pass": "1234",
       "cratedAt": "2023-10-01T10:00:00Z",
+      "modifiedAt": "2023-10-01T10:00:00Z",
       "deleted": false
     },
     {
       "id": "2",
-      "PName": "Bill",
-      "Pass": "abcd",
+      "pName": "Bill",
+      "pass": "abcd",
       "cratedAt": "2023-10-01T10:00:00Z",
-      "deleted": true
+      "modifiedAt": "2023-10-01T10:00:00Z",
+      "deleted": false
     }
   ],
   "users": [
     {
       "id": "1",
-      "PrId": "1",
-      "UName": "John Doe",
+      "prId": "1",
+      "uName": "John Doe",
       "phone": "+16545659889",
       "email": "xLg6W@example.com",
       "address": "123 Main St, New York, NY 10001",
       "note": "admin",
-      "cratedAt": "2023-10-01T10:00:00Z"
+      "cratedAt": "2023-10-01T10:00:00Z",
+      "modifiedAt": "2023-10-01T10:00:00Z",
+      "deleted": false
     },
     {
       "id": "2",
-      "PrId": "2",
-      "UName": "John Low",
+      "prId": "2",
+      "uName": "John Low",
       "phone": "+15543556454",
       "email": "XTg6W@example.com",
       "address": "123 Main St, New York, NY 10003",
       "note": "admin",
-      "cratedAt": "2023-10-01T10:00:00Z"
+      "cratedAt": "2023-10-01T10:00:00Z",
+      "modifiedAt": "2023-10-01T10:00:00Z",
+      "deleted": false
     }
   ],
   "mitings": [
     {
       "id": "1",
-      "UId": "1",
-      "PId": "1",
+      "uId": "1",
+      "pId": "1",
       "date": "2023-09-01",
       "timeStart": "10:00",
       "timeEnd": "11:00",
       "note": "Meeting with John Doe",
-      "cratedAt": "2023-10-01T10:00:00Z"
+      "cratedAt": "2023-10-01T10:00:00Z",
+      "completed": false,
+      "deleted": false
     },
     {
       "id": "2",
-      "UId": "2",
-      "PId": "2",
+      "uId": "2",
+      "pId": "2",
       "date": "2023-09-01",
       "timeStart": "11:00",
       "timeEnd": "12:00",
       "note": "Meeting with John Low",
-      "cratedAt": "2023-10-01T10:00:00Z"
+      "cratedAt": "2023-10-01T10:00:00Z",
+      "completed": false,
+      "deleted": false
     }
   ]
 }
